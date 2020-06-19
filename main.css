@@ -78,8 +78,8 @@ h2 {
     color: var(--dark-blue);
 }
 .card p {
-    font-size: 0.8125rm;
-    margin-bottom: 2.4375rm;
+    font-size: 0.8125em;
+    margin-bottom: 2.4375em;
     text-align: left;
     color: var(--grayish-blue);
 }
