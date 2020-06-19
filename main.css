@@ -1,0 +1,131 @@
+:root {
+--dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--light-gray: hsl(0, 0%, 98%);
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--light-gray);
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    width: 90%;
+    max-width: 69.375em;
+    margin: 0 auto 4.25em;
+}
+.heading {
+    margin: 4.5em auto 4.0625em;
+    text-align: center;
+    color: var(--dark-blue);
+}
+h1 {
+    font-size: 2.3125;
+    font-weight: 200;
+}
+h1.bold {
+    margin-bottom: 1.125em;
+}
+.bold {
+    font-weight: 600;
+}
+.heading p {
+    font-size: 0.9375em;
+    color: var(--grayish-blue);
+    width: 46%;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+}
+.container > .card, .cards-container {
+    width: 33%;
+    max-width: 21.875em;
+    flex: 1;
+}
+.cards-container {
+    margin: 0 1.875em;
+}
+
+.cards-container > .card:first-child {
+    margin-bottom: 1.875em;
+}
+.card {
+    box-shadow: 5px 10px 20px -5px hsla(229, 6%, 66%, 0.3);
+    align-self: center;
+    text-align: right;
+    border-radius: 5px;
+    background-color: white;
+    transition: .4s;
+}
+.card-content {
+    width: 82%;
+    margin: 0 auto;
+    padding: 1.6875em 0 1.875em;
+}
+h2 {
+    font-size: 1.25em;
+    text-align: left;
+    margin-bottom: 0.5625em;
+    color: var(--dark-blue);
+}
+.card p {
+    font-size: 0.8125rm;
+    margin-bottom: 2.4375rm;
+    text-align: left;
+    color: var(--grayish-blue);
+}
+.supervisor {
+    border-top: 0.25em solid var(--cyan);
+}
+.tm {
+    border-top: 0.25em solid var(--red);
+}
+.karma {
+    border-top: 0.25em solid var(--orange);
+}
+.calc {
+    border-top: 0.25em solid var(--blue);
+}
+.card:hover {
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    main {
+        margin-bottom: 4.875rm;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .heading p {
+        width: 83%;
+    }
+    .card p {
+        margin-bottom: 1.9375em;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-container {
+        margin: 1.4375em 0;
+        width: 82%;
+    }
+    .cards-container .card:first-child {
+        margin-bottom: 1.4375em;
+    }
+    .container > .card {
+        width: 82%;
+    }
+}
